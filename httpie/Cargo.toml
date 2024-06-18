@@ -1,0 +1,21 @@
+[package]
+name = "httpie"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+# anyhow: 用于简化异常处理。
+# clap: 解析命令行参数。
+# colored: 为终端输出内容赋予颜色。
+# jsonxf: 美化 json 串。
+# mime: 提供了各种 Media Type 的类型封装。
+# reqwest: http 客户端。
+# tokio: 异步库，本案例种我们使用 reqwest 的异步功能。
+clap = { version = "4.5.7", features = ["derive"] }
+reqwest = { version = "0.11", features = ["blocking","json"] }
+anyhow = "1.0.86"
+colored = "2.1.0"
+jsonxf = "1.1.1"
+mime = "0.3.17"
+tokio = { version = "1.36.0", features = ["rt", "rt-multi-thread", "macros"] }
