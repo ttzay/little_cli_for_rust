@@ -1,5 +1,5 @@
 
-use std::{error::Error, fs, io::Write};
+use std::{error::Error, io::Write};
 use clap::{Parser};
 use reqwest::Url;
 #[derive(Parser)]
